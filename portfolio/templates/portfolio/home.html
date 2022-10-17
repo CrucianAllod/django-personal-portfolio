@@ -1,5 +1,14 @@
 <h1> This is my portfolio</h1>
 
+{% load static %}
+<a href="{% url 'blog:all_blogs' %}">Блог</a>
+<br>
+
+<a href="{% static 'portfolio/Вязников Кирилл.pdf' %}">Резюме</a>
+<br>
+
+<img src="{% static 'portfolio/0H_dZlaXd5A.jpg' %}">
+
 {% for project in projects %}
 
     <h2>{{ project.title }}</h2>
